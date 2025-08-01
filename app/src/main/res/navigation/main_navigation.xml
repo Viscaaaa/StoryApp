@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.visca.storyaplication.View.Ui.User.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.visca.storyaplication.View.Ui.List.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+    <activity
+        android:id="@+id/postActivity"
+        android:name="com.visca.storyaplication.View.Ui.Posting.PostActivity"
+        android:label="activity_post"
+        tools:layout="@layout/activity_post" />
+</navigation>
